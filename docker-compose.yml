@@ -9,4 +9,4 @@ services:
             - '9000:9000'
         volumes:
             - ${PWD}/:/var/www/app
-            - ${PWD}/../loaders:/tmp/loaders1
+            - ${PWD}/../loaders:/tmp/loaders
