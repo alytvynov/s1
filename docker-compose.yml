@@ -1,0 +1,12 @@
+version: '3.0'
+
+services:
+    s1:
+        container_name: s1
+        build:
+            context: ./docker/php
+        ports:
+            - '9000:9000'
+        volumes:
+            - ${PWD}/:/var/www/app
+            - ${PWD}/../loaders:/tmp/loaders1
